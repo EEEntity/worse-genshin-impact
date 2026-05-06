@@ -13,11 +13,26 @@
 - `uinput`权限: 用于创建虚拟设备并模拟输入事件
 - `gstreamer(gst-plugin-pipewire)`: 用于获取图像数据
 - `opencv`: 用于图像相关任务[WIP]
-- `onnxruntime`: 用于推理[WIP]
+- `onnxruntime`: 用于推理
+
+```bash
+# Arch 软件包(依赖gstreamer/pipewire)
+sudo pacman -S onnxruntime-cpu gst-plugin-pipewire opencv
+# 加入input组
+sudo modprobe uinput
+sudo usermod -aG input "$USER"
+ls -l /dev/uinput
+# 或者chmod g+s获得权限
+```
 
 ## 使用
 
-### 进行OCR并保存图像[WIP]
+### 进行OCR并保存图像
+
+```bash
+cargo run --bin ocr_region
+```
+
 ### 准备地图SIFT缓存[WIP]
 ### 地图定位与角色/镜头朝向[WIP]
 ### 执行自动导航任务[WIP]

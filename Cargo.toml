@@ -3,6 +3,10 @@ name = "worse-genshin-impact"
 version = "0.1.0"
 edition = "2024"
 
+[[bin]]
+name = "ocr_region"
+path = "src/bin/ocr_region.rs"
+
 [dependencies]
 evdev-rs = "0.6.3"
 serde = { version = "1", features = ["derive"] }
