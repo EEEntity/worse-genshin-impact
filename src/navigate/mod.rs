@@ -4,8 +4,10 @@
 //! 
 //! 子模块:
 //! - [`path`] 路径json解析
+//! - [`orient`] 角色/摄像机朝向识别
 
 pub mod path;
+pub mod orient;
 pub mod error;
 
 pub use error::NavigateError;
