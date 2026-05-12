@@ -8,7 +8,9 @@
 pub mod model;
 pub mod ocr;
 pub mod svtr;
+pub mod yolo;
 pub mod session;
+pub mod grid_icon;
 
 pub use model::Model;
 pub use svtr::YapRecognizer;

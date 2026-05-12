@@ -2065,6 +2065,7 @@ version = "0.1.0"
 dependencies = [
  "anyhow",
  "ashpd",
+ "base64",
  "clipper2",
  "enumflags2",
  "evdev-rs",
