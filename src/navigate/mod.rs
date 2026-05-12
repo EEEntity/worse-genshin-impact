@@ -9,6 +9,7 @@
 //! - [`map`] 大地图/SIFT缓存
 //! - [`locate`] 小地图定位
 //! - [`coord`] 坐标转换
+//! - [`bv`] 视觉辅助
 
 pub mod path;
 pub mod orient;
@@ -18,5 +19,7 @@ pub mod scene;
 pub mod map;
 pub mod locate;
 pub mod coord;
+pub mod bv;
 
 pub use error::NavigateError;
+// 公开模块功能
