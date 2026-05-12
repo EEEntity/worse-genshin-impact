@@ -10,6 +10,7 @@
 //! - [`locate`] 小地图定位
 //! - [`coord`] 坐标转换
 //! - [`bv`] 视觉辅助
+//! - [`trap`] 卡死脱困
 
 pub mod path;
 pub mod orient;
@@ -20,6 +21,7 @@ pub mod map;
 pub mod locate;
 pub mod coord;
 pub mod bv;
+pub mod trap;
 
 pub use error::NavigateError;
 // 公开模块功能
