@@ -2097,6 +2097,7 @@ version = "0.1.0"
 dependencies = [
  "anyhow",
  "ashpd",
+ "base64",
  "bincode",
  "clipper2",
  "enumflags2",
