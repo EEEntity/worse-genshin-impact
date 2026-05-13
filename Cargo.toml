@@ -26,3 +26,6 @@ ort = { version = "2.0.0-rc.12", features = ["load-dynamic", "ndarray"] }
 base64 = "0.22"
 bincode = { version = "2", features = ["serde"] }
 rand = "0.8"
+async-trait = "0.1"
+pinyin = "0.11"
+natord = "1"

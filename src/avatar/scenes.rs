@@ -5,7 +5,7 @@ use opencv::core::{Mat, MatTraitConst, Rect};
 
 use crate::avatar::avatar::{Avatar, AvatarError, CancelFlag};
 use crate::avatar::predictor::AvatarPredictor;
-use crate::avatar::assets::registry;
+use crate::config::combat_avatar::registry;
 use crate::device::simulator::Simulator;
 use crate::navigate::bv::party::{
     MultiGameStatus, detect_multi_game_status, get_all_index_rects,
