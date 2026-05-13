@@ -50,6 +50,10 @@ impl TrapEscaper {
     pub fn last_action_time(&self) -> Instant {
         self.last_action_time
     }
+    /// 到达`last_action_time`
+    pub fn touch_action_time(&mut self) {
+        self.last_action_time = Instant::now();
+    }
     /// 累加30..=45度
     pub fn bump_random(&mut self) {
         let mut rng = rand::thread_rng();

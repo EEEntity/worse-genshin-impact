@@ -72,7 +72,7 @@ fn default_move_mode() -> String { "walk".to_string() }
 #[derive(Debug, Clone, Default, Serialize, Deserialize)]
 pub struct ExtParams {
     #[serde(default)]
-    pub misidentification: Option<Misidentification>,
+    pub misidentification: Misidentification,
     #[serde(default)]
     pub description: String,
     #[serde(default)]
