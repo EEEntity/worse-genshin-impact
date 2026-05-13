@@ -97,7 +97,7 @@ impl Simulator {
         self.do_up(action)
     }
     /// 鼠标点击
-    pub async fn click(&self, btn: MouseButton) -> Result<(), SimulatorError> {
+    pub async fn mouse_click(&self, btn: MouseButton) -> Result<(), SimulatorError> {
         self.mouse_down(btn)?;
         tokio::time::sleep(KEY_PRESS_DURATION).await;
         self.mouse_up(btn)
