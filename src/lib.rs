@@ -6,3 +6,4 @@ pub mod avatar;
 pub mod task;
 pub mod fight;
 pub mod utils;
+pub mod config;

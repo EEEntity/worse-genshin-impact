@@ -96,6 +96,7 @@ pub fn str_to_ev_key(name: &str) -> Option<EV_KEY> {
 ///     "SwitchMember1": "Key:KEY_1",
 /// }
 /// ```
+/// 需要做改键时，把这个扔到config模块
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(transparent)]
 pub struct KeyBindingsConfig {
@@ -126,7 +127,7 @@ impl KeyBindingsConfig {
     }
     /// 从文件加载配置，失败时warn并回退默认配置
     #[deprecated(note = "TODO: 迁移到 config 模块统一管理")]
-    pub fn load_from_file(path: &Path) -> Self {
+    pub fn load_or_default(path: &Path) -> Self {
         match Self::try_load(path) {
             Ok(c) => {
                 log::info!("keybindings loaded from {}", path.display());
