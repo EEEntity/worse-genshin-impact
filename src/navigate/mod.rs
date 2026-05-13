@@ -26,6 +26,7 @@ pub mod bv;
 pub mod trap;
 pub mod tp;
 pub mod action;
+pub mod constants;
 
 pub use error::NavigateError;
 // 公开模块功能
