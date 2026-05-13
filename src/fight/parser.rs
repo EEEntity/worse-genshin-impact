@@ -14,12 +14,13 @@ use std::collections::HashSet;
 use std::fs;
 use std::path::Path;
 
+use crate::config::combat_avatar::registry;
 use crate::fight::command::{CombatCommand, CommandError, CURRENT_AVATAR_NAME};
 use crate::fight::method::Method;
-use crate::avatar::assets::registry;
 use crate::utils::sorted_read_dir_paths;
 
 /// 战斗脚本
+#[derive(Debug, Clone, Default)]
 pub struct CombatScript {
     pub name: String,
     pub path: String,
