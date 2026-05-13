@@ -30,5 +30,13 @@ pub mod action;
 pub mod constants;
 pub mod executor;
 
+pub use action::{ActionContext, ActionHandler, ActionRegistry};
+pub use coord::Point2f;
 pub use error::NavigateError;
-// 公开模块功能
+pub use executor::{MinimapSource, MoveOutcome, PathExecutor, target_orientation_deg};
+pub use locate::{LocateInfo, Locator, MultiSceneLocator};
+pub use orient::{compute_camera_angle, compute_character_angle};
+pub use rotate::RotateController;
+pub use scene::{ALL_SCENES, Scene, SceneGeom};
+pub use tp::{TpDatabase, TpTask};
+pub use trap::TrapEscaper;
