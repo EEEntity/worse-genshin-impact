@@ -12,6 +12,7 @@
 //! - [`bv`] 视觉辅助
 //! - [`trap`] 卡死脱困
 //! - [`tp`] 传送子系统
+//! - [`action`] 动作处理
 
 pub mod path;
 pub mod orient;
@@ -24,6 +25,7 @@ pub mod coord;
 pub mod bv;
 pub mod trap;
 pub mod tp;
+pub mod action;
 
 pub use error::NavigateError;
 // 公开模块功能
