@@ -13,6 +13,7 @@
 //! - [`trap`] 卡死脱困
 //! - [`tp`] 传送子系统
 //! - [`action`] 动作处理
+//! - [`executor`] 执行器
 
 pub mod path;
 pub mod orient;
@@ -27,6 +28,7 @@ pub mod trap;
 pub mod tp;
 pub mod action;
 pub mod constants;
+pub mod executor;
 
 pub use error::NavigateError;
 // 公开模块功能
