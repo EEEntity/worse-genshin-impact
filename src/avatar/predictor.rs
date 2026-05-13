@@ -5,7 +5,7 @@ use std::path::Path;
 use std::sync::Mutex;
 use opencv::core::Mat;
 
-use crate::avatar::assets::{CombatAvatar, registry};
+use crate::config::combat_avatar::{CombatAvatar, registry};
 
 /// 从侧边头像截图识别角色
 pub trait AvatarPredictor: Send + Sync {

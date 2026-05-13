@@ -5,7 +5,7 @@ use std::sync::{Arc, Mutex};
 use std::time::{Duration, Instant};
 use opencv::core::Rect;
 
-use super::assets::CombatAvatar;
+use crate::config::combat_avatar::CombatAvatar;
 use crate::device::action::GIAction;
 use crate::device::keybindings::MouseButton;
 use crate::device::keytype::KeyType;
